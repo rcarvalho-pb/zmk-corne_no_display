@@ -27,6 +27,15 @@
         };
     };
 
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp A &kp A &kp A>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,10 +66,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4          &kp N5            &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp DELETE
-&trans  &none   &none   &none   &none           &none             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
-&trans  &none   &none   &trans  &kp LC(INSERT)  &kp LS(INSERT)    &none     &none     &none   &none      &kp END   &kp PG_DN
-                        &trans  &trans          &trans            &kp INS   &kp DEL   &trans
+&trans  &kp N1      &kp N2  &kp N3  &kp N4          &kp N5            &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp DELETE
+&trans  &none       &none   &none   &none           &none             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
+&trans  &new_macro  &none   &trans  &kp LC(INSERT)  &kp LS(INSERT)    &none     &none     &none   &none      &kp END   &kp PG_DN
+                            &trans  &trans          &trans            &kp INS   &kp DEL   &trans
             >;
         };
 
