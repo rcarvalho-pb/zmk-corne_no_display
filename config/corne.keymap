@@ -34,6 +34,13 @@
             bindings = <&kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp LS(S) &kp LS(U) &kp LS(M) &kp LS(M) &kp LS(A) &kp LS(R) &kp LS(Y) &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC &kp RET &kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp LS(S) &kp LS(I) &kp LS(G) &kp LS(N) &kp LS(A) &kp LS(L) &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC &kp RET &kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp LS(R) &kp LS(S) &kp LS(P) &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC &kp RET &kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp LS(T) &kp LS(F) &kp LS(S) &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC &kp RET &kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp LS(A) &kp LS(L) &kp LS(L) &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC &kp RET &kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp LS(V) &kp LS(E) &kp LS(D) &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC>;
             label = "LEITURA";
         };
+
+        agend1: agend1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp STAR &kp STAR &kp STAR &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC &kp COMMA &kp DLLR &kp S &kp C &kp H &kp E &kp D &kp COMMA &kp N1 &kp COMMA &kp N2 &kp N4 &kp COMMA &kp N0 &kp COMMA &kp N8 &kp N6 &kp N4 &kp N0 &kp N0 &kp RET &kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp STAR &kp STAR &kp STAR &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC &kp COMMA &kp DLLR &kp S &kp C &kp H &kp E &kp D &kp COMMA &kp N3 &kp COMMA &kp N1 &kp N0 &kp COMMA &kp N0 &kp COMMA &kp N9 &kp N0 &kp N0 &kp RET &kp DLLR &kp RBKT &kp LS(S) &kp LS(S) &kp LS(N) &kp RBRC &kp COMMA &kp STAR &kp STAR &kp STAR &kp COMMA &kp DLLR &kp RBKT &kp LS(T) &kp LS(R) &kp LS(Y) &kp RBRC &kp COMMA &kp DLLR &kp RBKT &kp LS(C) &kp LS(O) &kp LS(U) &kp LS(N) &kp LS(T) &kp RBRC &kp COMMA &kp DLLR &kp S &kp C &kp H &kp E &kp D &kp COMMA &kp N4 &kp COMMA &kp N9 &kp N3 &kp COMMA &kp N0 &kp COMMA &kp N6 &kp N0 &kp N0 &kp RET>;
+            label = "AGEND1";
+        };
     };
 
     keymap {
@@ -66,10 +73,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1    &kp N2  &kp N3  &kp N4          &kp N5            &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp DELETE
-&trans  &none     &none   &none   &none           &none             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
-&trans  &leitura  &none   &trans  &kp LC(INSERT)  &kp LS(INSERT)    &none     &none     &none   &none      &kp END   &kp PG_DN
-                          &trans  &trans          &trans            &kp INS   &kp DEL   &trans
+&trans  &kp N1    &kp N2   &kp N3  &kp N4          &kp N5            &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp DELETE
+&trans  &none     &none    &none   &none           &none             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
+&trans  &leitura  &agend1  &trans  &kp LC(INSERT)  &kp LS(INSERT)    &none     &none     &none   &none      &kp END   &kp PG_DN
+                           &trans  &trans          &trans            &kp INS   &kp DEL   &trans
             >;
         };
 
