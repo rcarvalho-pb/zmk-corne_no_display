@@ -166,7 +166,7 @@ layers:
   - RGB HUD
   - RGB BRI
   - RGB BRD
-  - '&soft_off'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {type: held alternate}
