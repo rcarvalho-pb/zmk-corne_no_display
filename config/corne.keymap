@@ -10,18 +10,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        wakeup-source;
-        diode-direction = "col2row";
-        rows = <5>;
-        cols = <14>;
-        row-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>, <&gpio0 4 GPIO_ACTIVE_LOW>, <&gpio0 5 GPIO_ACTIVE_LOW>, <&gpio0 6 GPIO_ACTIVE_LOW>, <&gpio0 7 GPIO_ACTIVE_LOW>;
-        col-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>, <&gpio1 1 GPIO_ACTIVE_LOW>, <&gpio1 2 GPIO_ACTIVE_LOW>, <&gpio1 3 GPIO_ACTIVE_LOW>, <&gpio1 4 GPIO_ACTIVE_LOW>, <&gpio1 5 GPIO_ACTIVE_LOW>, <&gpio1 6 GPIO_ACTIVE_LOW>, <&gpio1 7 GPIO_ACTIVE_LOW>, <&gpio1 8 GPIO_ACTIVE_LOW>, <&gpio1 9 GPIO_ACTIVE_LOW>, <&gpio1 10 GPIO_ACTIVE_LOW>, <&gpio1 11 GPIO_ACTIVE_LOW>, <&gpio1 12 GPIO_ACTIVE_LOW>, <&gpio1 13 GPIO_ACTIVE_LOW>;
-    };
-};
-
-/ {
     chosen {
         zmk,matrix_transform = &default_transform;
 
@@ -99,7 +87,7 @@
 &kp F1          &kp F2           &kp F3           &kp F4           &kp F5        &kp F6          &kp F7       &kp F8      &kp F9           &kp F10          &kp F11          &kp F12
 &bt BT_CLR_ALL  &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3    &none        &none       &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
 &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &sys_reset    &bootloader     &bootloader  &sys_reset  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
-                                                  &soft_off        &trans        &trans          &trans       &trans      &trans
+                                                  &trans           &trans        &trans          &trans       &trans      &trans
             >;
         };
     };
