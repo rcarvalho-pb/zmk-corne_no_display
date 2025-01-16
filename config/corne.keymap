@@ -10,6 +10,18 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+        diode-direction = "col2row";
+        rows = <5>;
+        cols = <14>;
+        row-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>, <&gpio0 4 GPIO_ACTIVE_LOW>, <&gpio0 5 GPIO_ACTIVE_LOW>, <&gpio0 6 GPIO_ACTIVE_LOW>, <&gpio0 7 GPIO_ACTIVE_LOW>;
+        col-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>, <&gpio1 1 GPIO_ACTIVE_LOW>, <&gpio1 2 GPIO_ACTIVE_LOW>, <&gpio1 3 GPIO_ACTIVE_LOW>, <&gpio1 4 GPIO_ACTIVE_LOW>, <&gpio1 5 GPIO_ACTIVE_LOW>, <&gpio1 6 GPIO_ACTIVE_LOW>, <&gpio1 7 GPIO_ACTIVE_LOW>, <&gpio1 8 GPIO_ACTIVE_LOW>, <&gpio1 9 GPIO_ACTIVE_LOW>, <&gpio1 10 GPIO_ACTIVE_LOW>, <&gpio1 11 GPIO_ACTIVE_LOW>, <&gpio1 12 GPIO_ACTIVE_LOW>, <&gpio1 13 GPIO_ACTIVE_LOW>;
+    };
+};
+
+/ {
     chosen {
         zmk,matrix_transform = &default_transform;
 
