@@ -59,7 +59,7 @@
 
             bindings = <
 &trans  &kp N1              &kp N2      &kp N3          &kp N4          &kp N5             &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp BSPC
-&trans  &none               &none       &none           &none           &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
+&trans  &none               &none       &kp C_MUTE      &kp C_VOL_DN    &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
 &none   &kp LC(LS(ESCAPE))  &kp LA(F4)  &kp LC(INSERT)  &kp LS(INSERT)  &kp LG(LS(S))      &none     &none     &none   &none      &kp END   &kp PG_DN
                                         &trans          &trans          &trans             &trans    &kp DEL   &trans
             >;
